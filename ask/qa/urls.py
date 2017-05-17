@@ -1,6 +1,6 @@
 from django.conf.urls import url
 from django.contrib import admin
-from qa.views import test
+from qa.views import test,error404
 
 urlpatterns = [
     url(r'^question/(?P<num>\d+)/$', test),
@@ -10,4 +10,5 @@ urlpatterns = [
     url(r'^new/', test),
     url(r'^popular/', test),
     url(r'^$', test),
+	url(r'^/$', error404),
 ]
