@@ -18,6 +18,12 @@ from django.contrib import admin
 
 
 urlpatterns = [
-    url(r'^', include('qa.urls')),
+    url(r'^question/(?P<num>\d+)/$', test),
+    url(r'^login/$', test),
+    url(r'^singup/$', test),
+    url(r'^ask/$', test),
+    url(r'^new/$', test),
+    url(r'^popular/$', test),
+    url(r'^/$', test),
 	
 ]
