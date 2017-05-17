@@ -24,6 +24,6 @@ urlpatterns = [
     url(r'^ask/$', test),
     url(r'^new/$', test),
     url(r'^popular/$', test),
-    url(r'^/$', test),
+    url(r'^$', test),
 	
 ]
