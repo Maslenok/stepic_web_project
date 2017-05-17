@@ -17,7 +17,7 @@ from django.conf.urls import url,include, patterns
 from django.contrib import admin
 from qa.views import test
 
-urlpatterns = patterns['',
+urlpatterns = patterns('',
     url(r'^question/(?P<num>\d+)/$', test),
     url(r'^login/$', test),
     url(r'^signup/$', test),
@@ -27,4 +27,4 @@ urlpatterns = patterns['',
     url(r'^$', test),
 	
 	
-]
+)
